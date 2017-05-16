@@ -3,28 +3,53 @@
     <head>
         <meta charset="utf-8">
         <title>Maquette-2</title>
+
+        <link href="./bootstrap-3.3.7-dist/css/bootstrapvero.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="style.css">
+
+        <script src="./bootstrap-3.3.7-dist/fonts"></script>
+        <script src="jquery.js"></script>
+        <script src="./bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+
+
     </head>
     <body>
 <main>
 
   <header>
-      <img id="imgfond" src="./img/image-499666622.jpg"alt="imgfond">
-          <nav>
-            <img class="logo" src="./img/logo.png" class="logo">
-            <ul id="navigation">
-               <li><a href="#"> Service</a></li>
+
+
+       <div class="container1">
+
+           <div class="container-fluid">
+
+
+                   <a id="logo" class="navbar-brand" href="#">
+                  <img alt="Brand" src="./img/logo.png"> </a>
+           <nav class=".navbar-default .navbar-nav navbar-right " >
+
+            <ul class="nav navbar-nav">
+               <li class="active"><a href="#"> Service</a></li>
                <li><a href="index.html">   Portfolio</a></li>
                <li><a href="index.html">    Testimonials</a></li>
                <li><a href="index.html">    Teams</a></li>
                <li><a href="index.html">    Contact</a></li>
-               <li><a href="index.html">    Archives</a></li>
+               <li><a href="index.html">    Archives <i class="glyphicon glyphicon-chevron-down"></i></a></li>
             </ul>
-          </nav>
+          </nav><br>
+  <div class="jumbotron">
 
-       <p class="titre">A Flexible one page porte folio theme</br>for a full and user experience </p>
+       <h1 class="titre">A Flexible one page porte folio theme</br>for a full and user experience </h1>
        <p class="sous-titre"> we implement awesomme ideas into full-scale projects.</p>
-       <button type="button1" name="button1">See more</button>
+       <!-- <button type="button1" name="button1">See more</button> -->
+
+     </div>
+
+          <p><a class="btn-warning btn-lg" href="#" role="button">See more</a></p>
+
+   </div>
+ </div>
+ </div>
   </header>
 
 
@@ -78,7 +103,7 @@
                 <i id="ballon" class="fa fa-dribbble" aria-hidden="true"></i>
                 <i id="photo" class="fa fa-camera" aria-hidden="true"></i>
 
-              <form id="formu" action="formulaire.php" method="POST">
+              <form name="form" id="formu" action="formulaire.php" method="POST">
                     <p id="sendus">Send us a direct message<br><br></p>
                     <label class="formname">Your Name<br></label>
                     <input type="text" name="Name" id="inputname">

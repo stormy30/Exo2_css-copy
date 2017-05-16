@@ -3,10 +3,12 @@
     <head>
         <meta charset="utf-8">
         <title>Maquette-2</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="formulaire.css">
+        
     </head>
 
 <?php
+$form=$_POST['form'];
 $Message=$_POST['Message'];
 $Name=$_POST['Name'];
 $Email=$_POST['Email'];
@@ -19,12 +21,12 @@ $str = strtolower($str);
     strip_tags($str);
     echo $str;
  } else {
-   echo 'Cet email a un format non adapté.';
+   echo  '<p class= "messerror"/> Cet email a un format non adapté </p>';
  }
 
  if
  (strlen ( $Name)> 20 ) {
-   echo "nombre de caractère trop grand pour le nom";
+   echo '<p class= "messerror"/>nombre de caractère trop grand pour le nom</p>';
  }  else{
    echo $str;
  }
